@@ -1,0 +1,215 @@
+╔════════════════════════════════════════════════════════════════╗
+║   MURUGA WELLNESS PLATFORM - SEPARATED FILES INSTALLATION     ║
+║                    STEP-BY-STEP GUIDE                          ║
+╚════════════════════════════════════════════════════════════════╝
+
+📦 YOU HAVE DOWNLOADED 4 FOLDERS WITH ALL THE FILES SEPARATED:
+
+1. ROOT folder           → 9 files (goes in muruga-app root)
+2. SRC folder            → 3 files (goes in muruga-app/src/)
+3. SRC-COMPONENTS folder → 1 file  (goes in muruga-app/src/components/)
+4. SRC-PAGES folder      → 7 files (goes in muruga-app/src/pages/)
+
+
+🗂️ STEP 1: CREATE THE FOLDER STRUCTURE
+========================================
+
+On your computer, create this folder structure:
+
+C:\Users\DELL\MURUGA\muruga-app\
+└── src\
+    ├── components\
+    └── pages\
+
+
+📥 STEP 2: PLACE FILES IN CORRECT LOCATIONS
+============================================
+
+From ROOT folder (9 files) → Place in: C:\Users\DELL\MURUGA\muruga-app\
+├── package.json
+├── index.html
+├── vite.config.js
+├── tailwind.config.js
+├── postcss.config.js
+├── .gitignore
+├── README.md
+├── DOCUMENTATION.md
+└── FILE_STRUCTURE.txt
+
+
+From SRC folder (3 files) → Place in: C:\Users\DELL\MURUGA\muruga-app\src\
+├── App.jsx
+├── main.jsx
+└── index.css
+
+
+From SRC-COMPONENTS folder (1 file) → Place in: C:\Users\DELL\MURUGA\muruga-app\src\components\
+└── Sidebar.jsx
+
+
+From SRC-PAGES folder (7 files) → Place in: C:\Users\DELL\MURUGA\muruga-app\src\pages\
+├── Dashboard.jsx
+├── MoodTracker.jsx
+├── WellnessResources.jsx
+├── ActivityTracker.jsx
+├── Feedback.jsx
+├── AIChatbot.jsx
+└── Support.jsx
+
+
+✅ STEP 3: VERIFY YOUR STRUCTURE
+=================================
+
+Your final structure should look like this:
+
+C:\Users\DELL\MURUGA\muruga-app\
+│
+├── 📄 package.json              ← From ROOT folder
+├── 📄 index.html                ← From ROOT folder
+├── 📄 vite.config.js            ← From ROOT folder
+├── 📄 tailwind.config.js        ← From ROOT folder
+├── 📄 postcss.config.js         ← From ROOT folder
+├── 📄 .gitignore                ← From ROOT folder
+├── 📄 README.md                 ← From ROOT folder
+├── 📄 DOCUMENTATION.md          ← From ROOT folder
+├── 📄 FILE_STRUCTURE.txt        ← From ROOT folder
+│
+└── 📁 src\
+    │
+    ├── 📄 App.jsx               ← From SRC folder
+    ├── 📄 main.jsx              ← From SRC folder
+    ├── 📄 index.css             ← From SRC folder
+    │
+    ├── 📁 components\
+    │   └── 📄 Sidebar.jsx       ← From SRC-COMPONENTS folder
+    │
+    └── 📁 pages\
+        ├── 📄 Dashboard.jsx         ← From SRC-PAGES folder
+        ├── 📄 MoodTracker.jsx       ← From SRC-PAGES folder
+        ├── 📄 WellnessResources.jsx ← From SRC-PAGES folder
+        ├── 📄 ActivityTracker.jsx   ← From SRC-PAGES folder
+        ├── 📄 Feedback.jsx          ← From SRC-PAGES folder
+        ├── 📄 AIChatbot.jsx         ← From SRC-PAGES folder
+        └── 📄 Support.jsx           ← From SRC-PAGES folder
+
+
+🚀 STEP 4: INSTALL AND RUN
+===========================
+
+Open PowerShell or Command Prompt and run:
+
+# Navigate to project
+cd C:\Users\DELL\MURUGA\muruga-app
+
+# Install dependencies
+npm install --legacy-peer-deps
+
+# Start development server
+npm run dev
+
+
+✨ STEP 5: OPEN IN BROWSER
+===========================
+
+Your app will be running at:
+http://localhost:5173
+
+
+📋 QUICK CHECKLIST
+==================
+
+Before running npm install, verify you have:
+
+In muruga-app\ folder:
+□ package.json
+□ index.html
+□ vite.config.js
+□ tailwind.config.js
+□ postcss.config.js
+
+In muruga-app\src\ folder:
+□ App.jsx
+□ main.jsx
+□ index.css
+
+In muruga-app\src\components\ folder:
+□ Sidebar.jsx
+
+In muruga-app\src\pages\ folder:
+□ Dashboard.jsx
+□ MoodTracker.jsx
+□ WellnessResources.jsx
+□ ActivityTracker.jsx
+□ Feedback.jsx
+□ AIChatbot.jsx
+□ Support.jsx
+
+
+🎯 TOTAL FILE COUNT: 18 files
+
+
+⚠️ COMMON MISTAKES TO AVOID
+============================
+
+❌ DON'T put all files in one folder
+❌ DON'T forget to create src/, components/, and pages/ folders
+❌ DON'T rename the folders
+❌ DON'T put .jsx files in the root folder
+
+✅ DO follow the structure exactly as shown above
+✅ DO create all subfolders (src, components, pages)
+✅ DO verify file locations before running npm install
+
+
+💡 VISUAL GUIDE
+===============
+
+ROOT Folder Files (where package.json lives):
+C:\Users\DELL\MURUGA\muruga-app\
+└── package.json ← You are here!
+
+SRC Folder Files (one level deep):
+C:\Users\DELL\MURUGA\muruga-app\src\
+└── App.jsx ← You are here!
+
+COMPONENTS Folder Files (two levels deep):
+C:\Users\DELL\MURUGA\muruga-app\src\components\
+└── Sidebar.jsx ← You are here!
+
+PAGES Folder Files (two levels deep):
+C:\Users\DELL\MURUGA\muruga-app\src\pages\
+└── Dashboard.jsx ← You are here!
+
+
+🆘 NEED HELP?
+=============
+
+If you get errors:
+1. Make sure ALL files are in the correct folders
+2. Run: npm install --legacy-peer-deps
+3. Check that package.json is in the ROOT folder
+4. Verify src\App.jsx exists
+
+
+📞 TROUBLESHOOTING
+==================
+
+Error: "Cannot find package.json"
+→ Solution: Make sure package.json is in muruga-app\ folder
+
+Error: "Cannot find module './pages/Dashboard'"
+→ Solution: Check that Dashboard.jsx is in src\pages\ folder
+
+Error: "Failed to resolve import"
+→ Solution: Run "npm install --legacy-peer-deps"
+
+
+═══════════════════════════════════════════════════════════════
+
+✅ READY TO START!
+
+Once all files are in place, just run:
+  npm install --legacy-peer-deps
+  npm run dev
+
+═══════════════════════════════════════════════════════════════

@@ -1,0 +1,164 @@
+MURUGA WELLNESS PLATFORM - FILE STRUCTURE GUIDE
+===============================================
+
+📁 COMPLETE FOLDER STRUCTURE:
+
+MURUGA/
+└── muruga-app/                          ← Main project folder
+    │
+    ├── 📄 .gitignore                    ← Git ignore file
+    ├── 📄 DOCUMENTATION.md              ← Complete technical docs
+    ├── 📄 README.md                     ← Project overview & setup
+    ├── 📄 index.html                    ← Main HTML entry point
+    ├── 📄 package.json                  ← Dependencies & scripts
+    ├── 📄 postcss.config.js             ← PostCSS configuration
+    ├── 📄 tailwind.config.js            ← Tailwind CSS config
+    ├── 📄 vite.config.js                ← Vite build config
+    │
+    └── src/                             ← Source code folder
+        │
+        ├── 📄 App.jsx                   ← Main app component (routing)
+        ├── 📄 index.css                 ← Global styles & animations
+        ├── 📄 main.jsx                  ← React entry point
+        │
+        ├── components/                  ← Reusable components folder
+        │   └── 📄 Sidebar.jsx           ← Navigation sidebar
+        │
+        └── pages/                       ← Page components folder
+            ├── 📄 Dashboard.jsx         ← Main dashboard page
+            ├── 📄 MoodTracker.jsx       ← Mood tracking page
+            ├── 📄 WellnessResources.jsx ← Resources library page
+            ├── 📄 ActivityTracker.jsx   ← Activity monitoring page
+            ├── 📄 Feedback.jsx          ← Feedback form page
+            ├── 📄 AIChatbot.jsx         ← AI chatbot page 🆕
+            └── 📄 Support.jsx           ← Support resources page
+
+
+📊 FILE COUNT: 18 files total
+
+
+🗂️ HOW TO ORGANIZE THE FILES:
+
+1. Download the "MURUGA" folder from the interface above
+2. Extract it to your desired location (e.g., C:\Users\DELL\)
+3. The structure should look like this on your computer:
+
+   C:\Users\DELL\MURUGA\muruga-app\
+   ├── package.json
+   ├── index.html
+   ├── tailwind.config.js
+   ├── vite.config.js
+   ├── postcss.config.js
+   ├── .gitignore
+   ├── README.md
+   ├── DOCUMENTATION.md
+   └── src\
+       ├── App.jsx
+       ├── main.jsx
+       ├── index.css
+       ├── components\
+       │   └── Sidebar.jsx
+       └── pages\
+           ├── Dashboard.jsx
+           ├── MoodTracker.jsx
+           ├── WellnessResources.jsx
+           ├── ActivityTracker.jsx
+           ├── Feedback.jsx
+           ├── AIChatbot.jsx
+           └── Support.jsx
+
+
+⚠️ IMPORTANT: Do NOT create these folders manually!
+   All files are already organized in the correct structure.
+   Just download the MURUGA folder and use it as-is.
+
+
+🚀 SETUP STEPS:
+
+Step 1: Open Command Prompt or PowerShell
+Step 2: Navigate to the project folder
+   cd C:\Users\DELL\MURUGA\muruga-app
+
+Step 3: Delete any existing node_modules (if present)
+   Remove-Item -Recurse -Force node_modules -ErrorAction SilentlyContinue
+   Remove-Item -Force package-lock.json -ErrorAction SilentlyContinue
+
+Step 4: Install dependencies
+   npm install --legacy-peer-deps
+
+Step 5: Start the development server
+   npm run dev
+
+Step 6: Open browser
+   http://localhost:5173
+
+
+📦 WHAT GETS CREATED AFTER npm install:
+
+MURUGA/muruga-app/
+├── node_modules/        ← Installed packages (auto-generated)
+├── package-lock.json    ← Lock file (auto-generated)
+└── [all your files...]
+
+
+🏗️ WHAT GETS CREATED AFTER npm run build:
+
+MURUGA/muruga-app/
+├── dist/                ← Production build (auto-generated)
+│   ├── index.html
+│   └── assets/
+│       ├── index-[hash].js
+│       └── index-[hash].css
+└── [all your files...]
+
+
+✅ VERIFICATION CHECKLIST:
+
+Before running npm install, verify you have these files:
+□ package.json (in muruga-app folder)
+□ index.html (in muruga-app folder)
+□ vite.config.js (in muruga-app folder)
+□ tailwind.config.js (in muruga-app folder)
+□ src/App.jsx (in muruga-app/src folder)
+□ src/main.jsx (in muruga-app/src folder)
+□ src/components/Sidebar.jsx (in muruga-app/src/components folder)
+□ src/pages/Dashboard.jsx (in muruga-app/src/pages folder)
+□ All 7 page files in src/pages/ folder
+
+
+🎯 QUICK START COMMANDS:
+
+# Navigate to project
+cd MURUGA/muruga-app
+
+# Install (use this if you get errors)
+npm install --legacy-peer-deps
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+
+
+📞 TROUBLESHOOTING:
+
+Problem: "Cannot find module 'react'"
+Solution: Run "npm install --legacy-peer-deps"
+
+Problem: "Failed to resolve import lucide-react"
+Solution: Run "npm install --legacy-peer-deps"
+
+Problem: Tailwind styles not working
+Solution: Make sure tailwind.config.js is in the root folder
+
+Problem: Vite error on startup
+Solution: Delete node_modules and package-lock.json, then reinstall
+
+
+💡 PRO TIP:
+The entire project is in the "MURUGA" folder you can download above.
+Everything is already organized - just download and run!
